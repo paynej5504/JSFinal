@@ -48,7 +48,7 @@ class Home extends React.Component {
               <h3>COVID-19 Totals Since March</h3>
               <Cards data={data}/> 
               <h3>End of Month Totals</h3>  
-			        <LineChartExample />
+     	      <LineChartExample />
           </div>
 
       )
