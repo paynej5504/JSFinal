@@ -1,4 +1,4 @@
-// import statements
+// import statements 
 import React from 'react';
 //the cards are components that come from @material-ui/core
 import {Card, CardContent, Typography, Grid} from '@material-ui/core';
