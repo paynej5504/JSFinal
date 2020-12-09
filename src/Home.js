@@ -45,7 +45,7 @@ class Home extends React.Component {
           <div className={styles.container} >
             <img src={logoImage} alt="logo"/>
               <AlertBox />
-              <h3>COVID-19 Totals Since March</h3>
+              <h3>COVID-19 Totals Since March</h3> 
               <Cards data={data}/> 
               <h3>End of Month Totals</h3>  
      	      <LineChartExample />
