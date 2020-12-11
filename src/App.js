@@ -3,7 +3,6 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from './Home';
 import Handlebars from "handlebars";
-import {Helmet} from 'react-helmet';
 import 'dont-sniff-mimetype';
 
 
@@ -26,9 +25,9 @@ function PageNotFound() {
   };
   return (
     <div className="PageNotFound">
-	 <Helmet>
+	 
       <div dangerouslySetInnerHTML={{ __html: template(data) }} />
-	 </Helmet>
+	
     </div>
   );
 }
@@ -41,14 +40,11 @@ const App = () => (
   
   <BrowserRouter>
     <div>
-    <Helmet>
-      http-equiv="Content-Security-Policy" content=""
-       X-Frame-Options: deny
-    </Helmet>
+   
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
-		      <Route exact path="/404" component={PageNotFound} />
+          <Route exact path="/404" component={PageNotFound} />
           <Route component={PageNotFound} />
         </Switch>
       </main>
